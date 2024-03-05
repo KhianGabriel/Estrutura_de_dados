@@ -1,8 +1,10 @@
-package AulasEstruturas.Exemplos_Aula01.PilhaJava;
+package AulasEstruturas.Exemplos_Aula01.PilhaJava.PilhaInvertida;
 
-public class PilhaMainEstatica {
+import AulasEstruturas.Exemplos_Aula01.PilhaJava.PilhaEstatica.PilhaEstatica;
+
+public class PilhaInvertidaMain {
     
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         
         Empilhavel pilha = new PilhaEstaticaInvertida(10);
 		pilha.empilhar("Instituto");

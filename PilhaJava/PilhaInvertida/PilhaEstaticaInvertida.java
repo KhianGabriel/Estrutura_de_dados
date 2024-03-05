@@ -1,29 +1,29 @@
-package AulasEstruturas.Exemplos_Aula01.PilhaJava;
+package AulasEstruturas.Exemplos_Aula01.PilhaJava.PilhaInvertida;
 
-public class PilhaEstatica implements Empilhavel {
-
+public class PilhaEstaticaInvertida implements Empilhavel {
+    
     // Variaveis globais
     int ponteiroTopo;
     Object[] dados;
 
     // Declarar construrores
-    public PilhaEstatica() {
+    public PilhaEstaticaInvertida() {
         this(10);
     }
 
-    public PilhaEstatica(int tamanho) {
-        this.ponteiroTopo = -1;
+    public PilhaEstaticaInvertida(int tamanho) {
+        this.ponteiroTopo = tamanho;
         this.dados = new Object[tamanho];
     }
 
     @Override
     public boolean estaVazia() {
-        return (ponteiroTopo == -1);
+        return (ponteiroTopo == dados.length);
     }
 
     @Override
     public boolean estaCheia() {
-        return (ponteiroTopo == dados.length - 1);
+        return (ponteiroTopo == 0);
     }
 
     @Override
@@ -41,8 +41,8 @@ public class PilhaEstatica implements Empilhavel {
     public String imprimir() {
         String retorno = "[";
 
-        for (int i = ponteiroTopo; i >=0; i--) {
-            if (i == 0) {
+        for (int i = ponteiroTopo; i <= dados.length - 1; i++) {
+            if (i == dados.length - 1) {
                 retorno += dados[i];
             } else {
                 retorno += dados[i] + ",";
@@ -54,7 +54,7 @@ public class PilhaEstatica implements Empilhavel {
     @Override
     public void empilhar(Object dado) {
         if (!estaCheia()) {
-            ponteiroTopo++;
+            ponteiroTopo--;
             dados[ponteiroTopo] = dado;
         } else {
             System.out.println("The stack is full");
@@ -66,7 +66,7 @@ public class PilhaEstatica implements Empilhavel {
         Object retorno = "";
         if (!estaVazia()) {
             retorno = dados[ponteiroTopo];
-            ponteiroTopo--;
+            ponteiroTopo++;
         } else {
             System.out.println("The stack is empty");
         }

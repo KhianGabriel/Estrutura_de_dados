@@ -1,7 +1,6 @@
-package AulasEstruturas.Exemplos_Aula01.PilhaJava;
+package AulasEstruturas.Exemplos_Aula01.PilhaJava.PilhaInvertida;
 
 public interface Empilhavel {
-
     // Metodos auxiliares
     public boolean estaVazia();
     public boolean estaCheia();

@@ -1,4 +1,4 @@
-class PilhaEstaticaInvertida : Empilhavel {
+class PilhaEstaticaInvertida : EmpilhavelIn {
     // Variaveis globais
     private var ponteiroTopo: Int
     private var dados: Array<Any?>

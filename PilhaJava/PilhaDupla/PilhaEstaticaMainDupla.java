@@ -1,4 +1,4 @@
-package AulasEstruturas.Exemplos_Aula01.PilhaJava;
+package AulasEstruturas.Exemplos_Aula01.PilhaJava.PilhaDupla;
 
 public class PilhaEstaticaMainDupla {
     public static void main(String[] args) {

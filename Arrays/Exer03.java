@@ -1,4 +1,4 @@
-package AulasEstruturas.ExerciciosArrays;
+package AulasEstruturas.Arrays;
 
 import java.util.Scanner;
 

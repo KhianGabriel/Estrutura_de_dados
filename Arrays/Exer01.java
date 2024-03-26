@@ -1,4 +1,4 @@
-package AulasEstruturas.ExerciciosArrays;
+package AulasEstruturas.Arrays;
 
 public class Exer01{
 
